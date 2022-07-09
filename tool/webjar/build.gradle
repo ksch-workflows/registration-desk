@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.github.ksch-workflows'
+            artifactId = 'registration-desk'
+            version = '0.0.10'
+
+            from components.java
+        }
+    }
+}

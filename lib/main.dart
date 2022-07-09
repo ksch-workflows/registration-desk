@@ -10,7 +10,7 @@ void main() {
   var api = KschApi(
     const String.fromEnvironment(
       'apiBaseUrl',
-      defaultValue: 'http://localhost:8080',
+      defaultValue: 'https://ksch-workflows-306713.ey.r.appspot.com',
     ),
   );
 
